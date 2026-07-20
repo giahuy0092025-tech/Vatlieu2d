@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  
+  --color-vibrant-rose: #F43F5E;
+  --color-vibrant-rose-hover: #E11D48;
+  --color-vibrant-rose-dark: #881337;
+  --color-vibrant-navy: #0F172A;
+  --color-vibrant-slate: #1E293B;
+  --color-vibrant-input: #334155;
+  --color-vibrant-yellow: #FCD34D;
+  --color-vibrant-yellow-dark: #B45309;
+  --color-vibrant-sky: #38BDF8;
+}
+
+/* Custom visual styles */
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-vibrant-navy);
+  color: #f1f5f9;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.heading-font {
+  font-family: var(--font-display);
+}
+
+.mono-font {
+  font-family: var(--font-mono);
+}
+
+/* Button & Card Components styling helper */
+.vibrant-btn-rose {
+  background-color: #F43F5E;
+  color: #ffffff;
+  font-weight: 700;
+  border-bottom: 4px solid #881337;
+  transition: all 0.15s ease-in-out;
+}
+.vibrant-btn-rose:hover {
+  background-color: #E11D48;
+}
+.vibrant-btn-rose:active {
+  border-bottom-width: 0px;
+  transform: translateY(4px);
+}
+
+.vibrant-btn-yellow {
+  background-color: #FCD34D;
+  color: #78350F;
+  font-weight: 900;
+  border-bottom: 4px solid #B45309;
+  transition: all 0.15s ease-in-out;
+}
+.vibrant-btn-yellow:hover {
+  background-color: #fbd033;
+}
+.vibrant-btn-yellow:active {
+  border-bottom-width: 0px;
+  transform: translateY(4px);
+}
+
+.vibrant-btn-slate {
+  background-color: #334155;
+  color: #f1f5f9;
+  font-weight: 700;
+  border-bottom: 4px solid #1e293b;
+  transition: all 0.15s ease-in-out;
+}
+.vibrant-btn-slate:hover {
+  background-color: #475569;
+}
+.vibrant-btn-slate:active {
+  border-bottom-width: 0px;
+  transform: translateY(4px);
+}
+
+.vibrant-btn-white {
+  background-color: #ffffff;
+  color: #1e293b;
+  font-weight: 800;
+  border-bottom: 4px solid #cbd5e1;
+  transition: all 0.15s ease-in-out;
+}
+.vibrant-btn-white:hover {
+  background-color: #f8fafc;
+}
+.vibrant-btn-white:active {
+  border-bottom-width: 0px;
+  transform: translateY(4px);
+}
+
+/* Custom dark scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #475569;
+}
